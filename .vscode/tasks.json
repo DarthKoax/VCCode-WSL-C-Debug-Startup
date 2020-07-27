@@ -1,0 +1,44 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "shell: gcc-9 build program",
+            "command": "/usr/bin/gcc-9",
+            "args": [
+                "-ansi",
+                "-Wall",
+                "-pedantic",
+                "-g",
+                "${workspaceFolder}/*.c",
+                "-o",
+                "${fileDirname}/app"
+            ],
+            "options": {
+                "cwd": "/usr/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "shell",
+            "label": "remove exe",
+            "command": "rm",
+            "args": [
+                "${fileDirname}/cpt220_menu_system"
+            ],
+            "options": {
+                "cwd": "/usr/bin"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+    ]
+}
