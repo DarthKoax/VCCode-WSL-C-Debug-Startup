@@ -30,7 +30,7 @@
             "label": "remove exe",
             "command": "rm",
             "args": [
-                "${fileDirname}/cpt220_menu_system"
+                "${fileDirname}/app"
             ],
             "options": {
                 "cwd": "/usr/bin"
